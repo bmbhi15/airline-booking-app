@@ -1,9 +1,9 @@
 const express = require("express");
 const { PORT } = require("./src/config");
+const router = require("./src/routes");
 
 const app = express();
 
-app.get("/", (req, res) => {
-  res.send("Started my first server");
-});
+app.use("/api", router);
+
 app.listen(PORT);
