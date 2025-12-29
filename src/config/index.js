@@ -1,7 +1,7 @@
-const logger = require("./logger-config");
-const { PORT } = require("./system-config");
+const Logger = require("./logger-config");
+const ServerConfig = require("./system-config");
 
 module.exports = {
-  PORT,
-  logger,
+  ServerConfig,
+  Logger,
 };
